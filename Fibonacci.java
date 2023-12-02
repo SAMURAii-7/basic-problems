@@ -8,7 +8,7 @@ public class Fibonacci {
         // print 1 i.e. the 3rd number
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of digits: ");
+        System.out.println("Enter the index of the Fibonacci number to be printed: ");
         int n = sc.nextInt();
         int res = generateFibonacci(n);
         System.out.println(res);
