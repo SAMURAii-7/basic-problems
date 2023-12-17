@@ -8,6 +8,17 @@ public class MultithreadingRunnable {
             // if (i == 0) {
             // throw new RuntimeException();
             // }
+
+            // check if a thread is alive
+            // myThread.isAlive();
+
+            // wait for a thread to complete executiong
+            // if (i == 0) {
+            // try {
+            // myThread.join();
+            // } catch (InterruptedException e) {
+            // }
+            // }
         }
         // all threads continue to run even if the main thread runs into an exception
         // throw new RuntimeException();
