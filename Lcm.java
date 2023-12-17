@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Lcm {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter two numbers: ");
-        int n1 = sc.nextInt();
-        int n2 = sc.nextInt();
-        lcm(n1, n2);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter two numbers: ");
+            int n1 = sc.nextInt();
+            int n2 = sc.nextInt();
+            lcm(n1, n2);
+        }
     }
 
     static void lcm(int num1, int num2) {

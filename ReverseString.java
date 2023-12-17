@@ -4,11 +4,12 @@ public class ReverseString {
     public static void main(String[] args) {
         // hello
         // olleh
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String s = sc.nextLine();
-        String res = revString(s);
-        System.out.print(res);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter a string: ");
+            String s = sc.nextLine();
+            String res = revString(s);
+            System.out.print(res);
+        }
     }
 
     public static String revString(String str) {

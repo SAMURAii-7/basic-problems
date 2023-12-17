@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class PrimeFactors {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        factors(n);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
+            int n = sc.nextInt();
+            factors(n);
+        }
     }
 
     static void factors(int num) {

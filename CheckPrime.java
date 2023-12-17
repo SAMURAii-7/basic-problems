@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class CheckPrime {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int n = sc.nextInt();
-        if (check(n))
-            System.out.print("Prime");
-        else
-            System.out.print("Not Prime");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number: ");
+            int n = sc.nextInt();
+            if (check(n))
+                System.out.print("Prime");
+            else
+                System.out.print("Not Prime");
+        }
     }
 
     public static boolean check(int num) {

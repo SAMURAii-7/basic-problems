@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Exp {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number and the power: ");
-        int n = sc.nextInt();
-        int power = sc.nextInt();
-        System.out.print(pow(n, power));
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number and the power: ");
+            int n = sc.nextInt();
+            int power = sc.nextInt();
+            System.out.print(pow(n, power));
+        }
     }
 
     static int pow(int n, int power) {

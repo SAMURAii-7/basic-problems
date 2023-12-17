@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Gcd {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter two numbers: ");
-        int n1 = sc.nextInt();
-        int n2 = sc.nextInt();
-        System.out.println("GCD: " + gcd(n1, n2));
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter two numbers: ");
+            int n1 = sc.nextInt();
+            int n2 = sc.nextInt();
+            System.out.println("GCD: " + gcd(n1, n2));
+        }
     }
 
     static int gcd(int num1, int num2) {

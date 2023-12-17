@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class Armstrong {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = sc.nextInt();
-        if (check(n))
-            System.out.print("true");
-        else
-            System.out.print("false");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
+            int n = sc.nextInt();
+            if (check(n))
+                System.out.print("true");
+            else
+                System.out.print("false");
+        }
     }
 
     static boolean check(int num) {

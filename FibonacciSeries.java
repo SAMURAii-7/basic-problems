@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of elements: ");
-        int n = sc.nextInt();
-        List<Integer> res = generateSeries(n);
-        for (int i : res) {
-            System.out.print(i + " ");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the number of elements: ");
+            int n = sc.nextInt();
+            List<Integer> res = generateSeries(n);
+            for (int i : res) {
+                System.out.print(i + " ");
+            }
         }
     }
 
